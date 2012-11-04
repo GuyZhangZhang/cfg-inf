@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/home/guy/Music/lyrics'
+let g:netrw_dirhist_2='/home/guy/Music/lyrics/Richard Marx'
+let g:netrw_dirhist_3='/home/guy/src/C_C++/deadlock'
+let g:netrw_dirhist_4='/home/guy/src/C_C++'
+let g:netrw_dirhist_5='/home/guy/src/C_C++/deadlock'
+let g:netrw_dirhist_6='/etc/resolvconf'
+let g:netrw_dirhist_7='/home/guy/Desktop/scmynssyzx/caches/configs'
+let g:netrw_dirhist_8='/usr/lib/perl5/Net/DNS'
+let g:netrw_dirhist_9='/home/guy/src/net/tbk/tmp'
