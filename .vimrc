@@ -36,10 +36,6 @@ set showmatch
 set list
 set listchars=extends:.,precedes:.,tab:>-,trail:-
 
-autocmd FileType yaml set tabstop=2
-if has("autocmd")
-    filetype plugin indent on
-endif
 set smartindent
 set expandtab
 %retab
@@ -47,6 +43,11 @@ set tabstop=4
 set softtabstop=4
 set cindent shiftwidth=4
 set autoindent shiftwidth=4
+
+autocmd FileType yaml set tabstop=2
+if has("autocmd")
+    filetype plugin indent on
+endif
 
 set cmdheight=1
 
