@@ -22,8 +22,6 @@ let $LANG = 'en_US'
 source $VIMRUNTIME/delmenu.vim
 source $VIMRUNTIME/menu.vim
 
-syntax on
-
 set nu!
 
 set tw=0
@@ -44,15 +42,10 @@ set softtabstop=4
 set cindent shiftwidth=4
 set autoindent shiftwidth=4
 
-autocmd FileType yaml set tabstop=2
-if has("autocmd")
-    filetype plugin indent on
-endif
-
 set cmdheight=1
 
-"set nospell
-set foldmethod=indent
+" set nospell
+" set foldmethod=indent
 
 set ignorecase
 
@@ -71,3 +64,11 @@ nnoremap <C-h> :w<cr>:bprevious<cr>
 inoremap <F5> <c-r>=strftime("%F %T")<cr>
 
 set backspace=indent,eol,start
+
+filetype plugin indent on
+syntax on
+
+autocmd FileType eruby,ruby,yaml set tabstop=2
+autocmd FileType eruby,ruby,yaml set softtabstop=2
+autocmd FileType eruby,ruby,yaml set cindent shiftwidth=2
+autocmd FileType eruby,ruby,yaml set autoindent shiftwidth=2
