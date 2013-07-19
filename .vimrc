@@ -71,3 +71,5 @@ nnoremap <C-h> :w<cr>:bprevious<cr>
 inoremap <F5> <c-r>=strftime("%F %T")<cr>
 
 set backspace=indent,eol,start
+
+set cc=81
