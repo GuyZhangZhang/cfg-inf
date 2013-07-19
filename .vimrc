@@ -51,7 +51,7 @@ endif
 
 set cmdheight=1
 
-"set nospell
+set nospell
 set foldmethod=indent
 
 set ignorecase
