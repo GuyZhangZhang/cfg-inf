@@ -3,19 +3,10 @@ set nocompatible
 " set bsdir=buffer
 " set autochdir
 
-"set enc=gb2312
-
-"set fenc=gb18030
-"set fileencoding=gb18030
-
-"set fencs=gb18030,gbk,gb2312,utf-8
-"set fileencodings=gb18030,gbk,gb2312,utf-8
-
-"set langmenu=en_US.GB18030
-set enc=utf-8
-set fenc=utf-8
-set fencs=utf-8,gb18030,gb2312,gbk
-set langmenu=en_US.UTF-8
+set enc=gb2312
+set fenc=gb18030
+set fencs=gb18030,gbk,gb2312,utf-8
+set langmenu=en_US.GB18030
 
 let $LANG = 'en_US'
 "set spl=en spell
