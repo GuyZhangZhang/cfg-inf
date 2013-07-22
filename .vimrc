@@ -44,8 +44,8 @@ set autoindent shiftwidth=4
 
 set cmdheight=1
 
-" set nospell
-" set foldmethod=indent
+set nospell
+set foldmethod=indent
 
 set ignorecase
 
@@ -66,9 +66,12 @@ inoremap <F5> <c-r>=strftime("%F %T")<cr>
 set backspace=indent,eol,start
 
 filetype plugin indent on
+
 syntax on
 
 autocmd FileType eruby,ruby,yaml set tabstop=2
 autocmd FileType eruby,ruby,yaml set softtabstop=2
 autocmd FileType eruby,ruby,yaml set cindent shiftwidth=2
 autocmd FileType eruby,ruby,yaml set autoindent shiftwidth=2
+
+set cc=81
