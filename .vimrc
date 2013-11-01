@@ -36,19 +36,20 @@ set autoindent shiftwidth=4
 set cmdheight=1
 
 set nospell
-set foldmethod=indent
+
+" Set fold by syntax
+set foldmethod=syntax
+
+" Set not auto fold when open file
+set foldlevelstart=99
 
 set ignorecase
 
 map :nohl :nohlsearch
 
-let Tlist_Show_One_File=1
-let Tlist_Exit_OnlyWindow=1
+nmap tb :TagbarToggle<cr>
 
-let g:winManagerWindowLayout='FileExplorer|TagList'
-let g:persistentBehaviour=0
-let g:defaultExplorer=0
-nmap wm :WMToggle<cr>
+nmap nt :NERDTreeToggle<cr>
 
 nnoremap <C-l> :w<cr>:bnext<cr>
 nnoremap <C-h> :w<cr>:bprevious<cr>
