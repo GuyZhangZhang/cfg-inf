@@ -37,6 +37,9 @@ set cmdheight=1
 
 set nospell
 
+" Set underline on action row
+set cul
+
 " Set fold by syntax
 set foldmethod=syntax
 
@@ -47,12 +50,37 @@ set ignorecase
 
 map :nohl :nohlsearch
 
+" for tagbar
 nmap tb :TagbarToggle<cr>
 
+let g:tagbar_type_markdown = {
+    \ 'ctagstype' : 'markdown',
+    \ 'kinds' : [
+        \ 'h:Heading_L1',
+        \ 'i:Heading_L2',
+        \ 'k:Heading_L3'
+    \ ]
+\ }
+
+let g:tagbar_type_ruby = {
+    \ 'kinds' : [
+        \ 'm:modules',
+        \ 'c:classes',
+        \ 'd:describes',
+        \ 'C:contexts',
+        \ 'f:methods',
+        \ 'F:singleton methods'
+    \ ]
+\ }
+
+" for NERDTree
 nmap nt :NERDTreeToggle<cr>
 
+" for replace minibuffer
 nnoremap <C-l> :w<cr>:bnext<cr>
 nnoremap <C-h> :w<cr>:bprevious<cr>
+
+" insert not time
 inoremap <F5> <c-r>=strftime("%F %T")<cr>
 
 set backspace=indent,eol,start
@@ -66,4 +94,5 @@ autocmd FileType eruby,ruby,yaml set softtabstop=2
 autocmd FileType eruby,ruby,yaml set cindent shiftwidth=2
 autocmd FileType eruby,ruby,yaml set autoindent shiftwidth=2
 
-set cc=81
+" Show 81 column
+" set cc=81
