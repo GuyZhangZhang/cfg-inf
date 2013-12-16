@@ -1,6 +1,8 @@
-colo delek
+" set color schema
+colo desert
+
 set nocompatible
-" set bsdir=buffer
+set bsdir=buffer
 " set autochdir
 
 set enc=utf-8
@@ -38,7 +40,7 @@ set cmdheight=1
 set nospell
 
 " Set underline on action row
-set cul
+" set cul
 
 " Set fold by syntax
 set foldmethod=syntax
@@ -72,6 +74,8 @@ let g:tagbar_type_ruby = {
         \ 'F:singleton methods'
     \ ]
 \ }
+
+set modifiable
 
 " for NERDTree
 nmap nt :NERDTreeToggle<cr>
