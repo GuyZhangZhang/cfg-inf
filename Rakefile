@@ -3,4 +3,6 @@ task :default do
   sh "rsync -ar --exclude=.git --delete .vim $HOME/"
   sh "cp -a .vimrc $HOME/"
   sh "cp -a .ctags $HOME/"
+  sh "cp -a .tmux.conf $HOME/"
+  sh "cp -a .inputrc $HOME/"
 end

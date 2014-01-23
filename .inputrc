@@ -1,0 +1,16 @@
+$include /etc/inputrc
+
+# for vi mode
+set editing-mode vi
+
+$if mode=vi
+
+"\e[A": history-search-backward            # arrow up
+"\e[B": history-search-forward             # arrow down
+"\ep": yank-last-arg                       # bind to Alt-p
+"\C-l": clear-screen
+"\C-x\C-r": re-read-init-file
+"\C-a": beginning-of-line
+"\C-e": end-of-line
+
+$endif
