@@ -14,3 +14,5 @@ $if mode=vi
 "\C-e": end-of-line
 
 $endif
+
+set keymap vi
