@@ -77,6 +77,9 @@ let g:tagbar_type_ruby = {
 
 set modifiable
 
+" for javascript
+let javascript_enable_domhtmlcss=1
+
 " for NERDTree
 nmap nt :NERDTreeToggle<cr>
 
