@@ -76,7 +76,7 @@ set showmatch
 map :nohl :nohlsearch
 
 " set underline on action row
-set cul
+" set cul
 
 " show 80 column
 " set cc=80
@@ -86,6 +86,9 @@ set foldmethod=syntax
 
 " set not auto fold when open file
 set foldlevelstart=99
+
+" set backspace key
+set backspace=indent,eol,start
 
 " =For Plugin==================================================================
 
