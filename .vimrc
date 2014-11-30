@@ -22,6 +22,7 @@ Plugin 'php.vim'
 Plugin 'go.vim'
 Plugin 'Markdown'
 Plugin 'tpope/vim-haml'
+Plugin 'derekwyatt/vim-scala'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
