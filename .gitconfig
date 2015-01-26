@@ -1,0 +1,26 @@
+[user]
+    name = GuyCheung
+    email = guy.xtafcusqt@gmail.com
+[color]
+    ui = true
+[alias]
+    ci = commit -av
+    st = status
+    co = checkout
+    br = branch
+    mg = merge --no-ff
+    glog = log --decorate --all --graph --oneline
+[gui]
+    encoding = utf-8
+[i18n]
+    commitencoding = utf-8
+    logoutputencoding = gbk
+[svn]
+    pathnameencoding = gbk
+[merge]
+    tool = vimdiff
+[core]
+    excludesfile = ~/.gitignore_global
+    ignorecase = false
+    autocrlf = input
+

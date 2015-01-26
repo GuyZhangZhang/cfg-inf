@@ -2,6 +2,8 @@ desc "deploy .vim .vimrc to $HOME"
 task :default do
   sh "cp -a .ctags $HOME/"
   sh "cp -a .tmux.conf $HOME/"
+  sh "cp -a .gitconfig $HOME/"
+  sh "cp -a .gitignore_global $HOME/"
 
   sh "mkdir -p $HOME/.vim"
   sh "cp -a .vimrc $HOME/ && sed --version 2>/dev/null | head -1 | grep GNU &>/dev/null && sed -i '/\" =For Plugin=/,$d' $HOME/.vimrc || sed -i '' '/\" =For Plugin=/,$d' $HOME/.vimrc"
