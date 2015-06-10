@@ -19,11 +19,15 @@ Plugin 'vim-ruby/vim-ruby'
 Plugin 'pangloss/vim-javascript'
 Plugin 'python.vim'
 Plugin 'php.vim'
-Plugin 'go.vim'
 Plugin 'godlygeek/tabular'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'tpope/vim-haml'
 Plugin 'derekwyatt/vim-scala'
+Plugin 'fatih/vim-go'
+Plugin 'scrooloose/syntastic'
+Plugin 'rjohnsondev/vim-compiler-go'
+Plugin 'dgryski/vim-godef'
+Plugin 'vim-jp/vim-go-extra'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
