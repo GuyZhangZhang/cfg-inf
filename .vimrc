@@ -25,7 +25,6 @@ Plugin 'tpope/vim-haml'
 Plugin 'derekwyatt/vim-scala'
 
 Plugin 'fatih/vim-go'
-Plugin 'rjohnsondev/vim-compiler-go'
 Plugin 'dgryski/vim-godef'
 Plugin 'vim-jp/vim-go-extra'
 
