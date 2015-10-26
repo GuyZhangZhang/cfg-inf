@@ -10,4 +10,6 @@ task :default do
   sh "[ ! -e \"$HOME/.vim/bundle/Vundle.vim\" ] && git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || true"
   sh "vim +PluginInstall +qall"
   sh "cp -a .vimrc $HOME/"
+
+  sh "go version && { go get -u github.com/rogpeppe/godef; go get -u github.com/nsf/gocode; }"
 end
