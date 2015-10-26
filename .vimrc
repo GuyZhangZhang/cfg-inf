@@ -26,6 +26,7 @@ Plugin 'derekwyatt/vim-scala'
 
 Plugin 'fatih/vim-go'
 Plugin 'dgryski/vim-godef'
+Plugin 'Blackrush/vim-gocode'
 Plugin 'vim-jp/vim-go-extra'
 
 Plugin 'rodjek/vim-puppet'
@@ -102,6 +103,10 @@ set backspace=indent,eol,start
 " set color
 colo desert256
 
+" for godef
+let g:godef_split = 2
+let g:godef_same_file_in_same_window = 1
+
 " for NERDTree
 nmap nt :NERDTreeToggle<cr>
 
@@ -125,6 +130,34 @@ let g:tagbar_type_ruby = {
         \ 'f:methods',
         \ 'F:singleton methods'
     \ ]
+\ }
+
+let g:tagbar_type_go = {
+    \ 'ctagstype' : 'go',
+    \ 'kinds'     : [
+        \ 'p:package',
+        \ 'i:imports:1',
+        \ 'c:constants',
+        \ 'v:variables',
+        \ 't:types',
+        \ 'n:interfaces',
+        \ 'w:fields',
+        \ 'e:embedded',
+        \ 'm:methods',
+        \ 'r:constructor',
+        \ 'f:functions'
+    \ ],
+    \ 'sro' : '.',
+    \ 'kind2scope' : {
+        \ 't' : 'ctype',
+        \ 'n' : 'ntype'
+    \ },
+    \ 'scope2kind' : {
+        \ 'ctype' : 't',
+        \ 'ntype' : 'n'
+    \ },
+    \ 'ctagsbin'  : 'gotags',
+    \ 'ctagsargs' : '-sort -silent'
 \ }
 
 " for replace minibuffer
