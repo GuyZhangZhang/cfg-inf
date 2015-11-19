@@ -132,7 +132,6 @@ spf13_vim() {
     msg "Trying to install spf13-vim"
 
     (
-        mkdir -p $SPF13VIM_PATH/.vim
         export APP_PATH=$SPF13VIM_PATH
         sh $spf13_vim_boot
     )

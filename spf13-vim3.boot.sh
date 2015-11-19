@@ -124,6 +124,8 @@ create_symlinks() {
     lnif "$source_path/.vimrc"         "$target_path/.vimrc"
     lnif "$source_path/.vimrc.bundles" "$target_path/.vimrc.bundles"
     lnif "$source_path/.vimrc.before"  "$target_path/.vimrc.before"
+
+    [ ! -e "$source_path/.vim" ] && mkdir -p "$source_path/.vim"
     lnif "$source_path/.vim"           "$target_path/.vim"
 
     if program_exists "nvim"; then

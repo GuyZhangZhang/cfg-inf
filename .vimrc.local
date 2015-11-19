@@ -43,7 +43,5 @@ nnoremap <C-h> :w<cr>:bprevious<cr>
 
 " for vim-airline
 if isdirectory(expand("~/.vim/bundle/vim-airline/"))
-    if !exists('g:airline_theme')
-        let g:airline_theme = 'monochrome'
-    endif
+    let g:airline_theme = 'monochrome'
 endif
