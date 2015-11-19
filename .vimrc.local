@@ -23,24 +23,27 @@ let g:tagbar_type_go = {
         \ 'm:methods',
         \ 'r:constructor',
         \ 'f:functions'
-    \ 
-],
+    \ ],
     \ 'sro' : '.',
     \ 'kind2scope' : {
         \ 't' : 'ctype',
         \ 'n' : 'ntype'
-    \ 
-},
+    \ },
             \ 'scope2kind' : {
         \ 'ctype' : 't',
         \ 'ntype' : 'n'
-    \ 
-},
+    \ },
     \ 'ctagsbin'  : 'gotags',
     \ 'ctagsargs' : '-sort -silent'
-    \ 
-}
+\ }
 
 " for replace minibuffer
 nnoremap <C-l> :w<cr>:bnext<cr>
 nnoremap <C-h> :w<cr>:bprevious<cr>
+
+" for vim-airline
+if isdirectory(expand("~/.vim/bundle/vim-airline/"))
+    if !exists('g:airline_theme')
+        let g:airline_theme = 'monochrome'
+    endif
+endif
