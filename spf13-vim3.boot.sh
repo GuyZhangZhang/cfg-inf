@@ -23,8 +23,6 @@ debug_mode='0'
 fork_maintainer='0'
 [ -z "$VUNDLE_URI" ] && VUNDLE_URI="https://github.com/gmarik/vundle.git"
 
-exit 0
-
 ############################  BASIC SETUP TOOLS
 msg() {
     printf '%b\n' "$1" >&2

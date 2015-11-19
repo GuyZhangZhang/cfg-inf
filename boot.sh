@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 
 ############################  SETUP PARAMETERS
+# cfg-inf
 app_name='cfg-inf'
-[ -z "$APP_PATH" ] && APP_PATH="$HOME/.cfg-inf"
+[ -z "$CFG_INF_PATH" ] && CFG_INF_PATH="$HOME/.cfg-inf"
 [ -z "$REPO_URI" ] && REPO_URI='https://github.com/GuyCheung/cfg-inf.git'
 [ -z "$REPO_BRANCH" ] && REPO_BRANCH='master'
 
-spf13_vim_boot="$APP_PATH/spf13-vim3.boot.sh"
-debug_mode='0'
+# spf13-vim
+spf13_vim_boot="$CFG_INF_PATH/spf13-vim3.boot.sh"
+[ -z "$SPF13VIM_PATH" ] && SPF13VIM_PATH="$HOME/.spf13-vim"
+
+# scripts
+debug_mode='1'
 
 ############################  BASIC SETUP TOOLS
 msg() {
@@ -26,7 +31,7 @@ error() {
 }
 
 debug() {
-    if [ "$debug_mode" -eq '1' ] && [ "$ret" -gt '1' ]; then
+    if [ "$debug_mode" -eq '1' ] && [ "$ret" -ge '1' ]; then
         msg "An error occurred in function \"${FUNCNAME[$i+1]}\" on line ${BASH_LINENO[$i+1]}, we're sorry for that."
     fi
 }
@@ -123,8 +128,10 @@ godeps() {
 spf13_vim() {
     msg "Trying to install spf13-vim"
 
-    SPF13VIM_PATH="$HOME/.spf13-vim"
-    APP_PATH=$SPF13VIM_PATH sh $spf13_vim_boot
+    (
+        export APP_PATH=$SPF13VIM_PATH
+        sh $spf13_vim_boot
+    )
 
     ret="$?"
     success "Install spf13-vim successed!"
@@ -136,12 +143,12 @@ variable_set 'HOME'
 program_must_exist 'vim'
 program_must_exist 'git'
 
-sync_repo       "$APP_PATH" \
+sync_repo       "$CFG_INF_PATH" \
                 "$REPO_URI" \
                 "$REPO_BRANCH" \
                 "$app_name"
 
-create_symlinks "$APP_PATH" \
+create_symlinks "$CFG_INF_PATH" \
                 "$HOME"
 
 spf13_vim
