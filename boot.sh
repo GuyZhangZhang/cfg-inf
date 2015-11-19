@@ -103,6 +103,9 @@ create_symlinks() {
     lnif "$source_path/.gitignore_global"  "$target_path/.gitignore_global"
     lnif "$source_path/.tmux.conf"         "$target_path/.tmux.conf"
 
+    lnif "$source_path/.vimrc.bundles.local"         "$target_path/.vimrc.bundles.local"
+    lnif "$source_path/.vimrc.local"         "$target_path/.vimrc.local"
+
     ret="$?"
     success "Setting up vim symlinks."
     debug
@@ -129,6 +132,7 @@ spf13_vim() {
     msg "Trying to install spf13-vim"
 
     (
+        mkdir -p $SPF13VIM_PATH/.vim
         export APP_PATH=$SPF13VIM_PATH
         sh $spf13_vim_boot
     )

@@ -1,0 +1,7 @@
+
+
+Bundle 'fatih/vim-go'
+Bundle 'dgryski/vim-godef'
+Bundle 'Blackrush/vim-gocode'
+Bundle 'vim-jp/vim-go-extra'
+
