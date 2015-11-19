@@ -5,11 +5,15 @@ task :default do
   sh "cp -a .gitconfig $HOME/"
   sh "cp -a .gitignore_global $HOME/"
 
-  sh "mkdir -p $HOME/.vim"
-  sh "cp -a .vimrc $HOME/ && sed --version 2>/dev/null | head -1 | grep GNU &>/dev/null && sed -i '/\" =For Plugin=/,$d' $HOME/.vimrc || sed -i '' '/\" =For Plugin=/,$d' $HOME/.vimrc"
-  sh "[ ! -e \"$HOME/.vim/bundle/Vundle.vim\" ] && git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || true"
-  sh "vim +PluginInstall +qall"
-  sh "cp -a .vimrc $HOME/"
+  # install spf13-vim
+  #sh "curl http://j.mp/spf13-vim3 -L -o - | sh"
+  sh "sh spf13-vim3.boot.sh"
+
+  #sh "mkdir -p $HOME/.vim"
+  #sh "cp -a .vimrc $HOME/ && sed --version 2>/dev/null | head -1 | grep GNU &>/dev/null && sed -i '/\" =For Plugin=/,$d' $HOME/.vimrc || sed -i '' '/\" =For Plugin=/,$d' $HOME/.vimrc"
+  #sh "[ ! -e \"$HOME/.vim/bundle/Vundle.vim\" ] && git clone https://github.com/gmarik/Vundle.vim.git $HOME/.vim/bundle/Vundle.vim || true"
+  #sh "vim +PluginInstall +qall"
+  #sh "cp -a .vimrc $HOME/"
 
   sh "go version && { go get -u github.com/rogpeppe/godef; go get -u github.com/nsf/gocode; }"
 end
