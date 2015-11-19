@@ -45,3 +45,6 @@ nnoremap <C-h> :w<cr>:bprevious<cr>
 if isdirectory(expand("~/.vim/bundle/vim-airline/"))
     let g:airline_theme = 'monochrome'
 endif
+
+" close mouse
+set mouse=
