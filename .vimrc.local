@@ -48,3 +48,10 @@ endif
 
 " close mouse
 set mouse=
+
+" set whichwrap
+set whichwrap=
+
+" For iTerm2 Transparent
+let g:solarized_termcolors=256
+let g:solarized_termtrans=1
