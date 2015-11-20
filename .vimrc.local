@@ -55,3 +55,4 @@ set whichwrap=
 " For iTerm2 Transparent
 let g:solarized_termcolors=256
 let g:solarized_termtrans=1
+let g:indent_guides_auto_colors = 0
