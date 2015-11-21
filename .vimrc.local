@@ -43,7 +43,7 @@ nnoremap <C-h> :w<cr>:bprevious<cr>
 
 " for vim-airline
 if isdirectory(expand("~/.vim/bundle/vim-airline/"))
-    let g:airline_theme = 'light'
+    let g:airline_theme = 'dark'
 endif
 
 " close mouse
