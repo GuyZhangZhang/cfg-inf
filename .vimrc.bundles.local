@@ -1,7 +1,42 @@
 
+" General {
+    if count(g:spf13_bundle_groups, 'general')
+        UnBundle 'tpope/vim-surround'
+        UnBundle 'tpope/vim-repeat'
+        UnBundle 'rhysd/conflict-marker.vim'
+        UnBundle 'jiangmiao/auto-pairs'
+        " Bundle 'ctrlpvim/ctrlp.vim'
+        " Bundle 'tacahiroy/ctrlp-funky'
+        " Bundle 'terryma/vim-multiple-cursors'
+        UnBundle 'vim-scripts/sessionman.vim'
+        UnBundle 'mbbill/undotree'
+        UnBundle 'nathanaelkane/vim-indent-guides'
+        " Bundle 'mhinz/vim-signify'
+        UnBundle 'tpope/vim-abolish.git'
+        UnBundle 'kana/vim-textobj-user'
+        UnBundle 'kana/vim-textobj-indent'
+        UnBundle 'gcmt/wildfire.vim'
+    endif
+" }
 
-Bundle 'fatih/vim-go'
-Bundle 'dgryski/vim-godef'
-Bundle 'Blackrush/vim-gocode'
-Bundle 'vim-jp/vim-go-extra'
+" Go Lang {
+    if count(g:spf13_bundle_groups, 'go')
+        Bundle 'dgryski/vim-godef'
+        Bundle 'Blackrush/vim-gocode'
+        Bundle 'vim-jp/vim-go-extra'
+    endif
+" }
+
+" General Programming {
+    if count(g:spf13_bundle_groups, 'programming')
+        " Pick one of the checksyntax, jslint, or syntastic
+        UnBundle 'scrooloose/syntastic'
+        UnBundle 'tpope/vim-fugitive'
+        UnBundle 'mattn/webapi-vim'
+        UnBundle 'mattn/gist-vim'
+        UnBundle 'scrooloose/nerdcommenter'
+        UnBundle 'tpope/vim-commentary'
+        UnBundle 'godlygeek/tabular'
+    endif
+" }
 
