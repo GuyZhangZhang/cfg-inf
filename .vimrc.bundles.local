@@ -4,7 +4,6 @@
         UnBundle 'tpope/vim-surround'
         UnBundle 'tpope/vim-repeat'
         UnBundle 'rhysd/conflict-marker.vim'
-        UnBundle 'jiangmiao/auto-pairs'
         " Bundle 'ctrlpvim/ctrlp.vim'
         " Bundle 'tacahiroy/ctrlp-funky'
         " Bundle 'terryma/vim-multiple-cursors'
