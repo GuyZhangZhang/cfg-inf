@@ -1,10 +1,10 @@
 
 " spf13 options {
     " Prevent automatically changing to open file directory
-    "   let g:spf13_no_autochdir = 1
+    let g:spf13_no_autochdir = 1
 
     " Disable views
-    "   let g:spf13_no_views = 1
+    let g:spf13_no_views = 1
 
     " Leader keys
     "   let g:spf13_leader='\'
@@ -14,7 +14,7 @@
     "   let g:spf13_no_easyWindows = 1
 
     " Disable wrap relative motion for start/end line motions
-    "   let g:spf13_no_wrapRelMotion = 1
+    let g:spf13_no_wrapRelMotion = 1
 
     " Disable fast tab navigation
     "   let g:spf13_no_fastTabs = 1
