@@ -38,8 +38,8 @@ let g:tagbar_type_go = {
 \ }
 
 " for replace minibuffer
-nnoremap <C-l> :w<cr>:bnext<cr>
-nnoremap <C-h> :w<cr>:bprevious<cr>
+nnoremap <C-l> :bnext<cr>
+nnoremap <C-h> :bprevious<cr>
 
 " for vim-airline
 if isdirectory(expand("~/.vim/bundle/vim-airline/"))
