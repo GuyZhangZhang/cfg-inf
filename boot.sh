@@ -91,6 +91,9 @@ sync_repo() {
         success "Successfully updated $repo_name"
     fi
 
+    msg "Trying to update submodules"
+    cd "$repo_path" && git submodule update --init
+
     debug
 }
 
