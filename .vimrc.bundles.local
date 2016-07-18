@@ -26,6 +26,12 @@
     endif
 " }
 
+" Go Lang {
+    if count(g:spf13_bundle_groups, 'javascript')
+        Bundle 'mxw/vim-jsx'
+    endif
+" }
+
 " General Programming {
     if count(g:spf13_bundle_groups, 'programming')
         " Pick one of the checksyntax, jslint, or syntastic
