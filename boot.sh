@@ -133,6 +133,17 @@ godeps() {
     debug
 }
 
+vimdeps() {
+    msg "Trying to install deps of vim plugins"
+
+    if [ -e "~/.vim/bundle/vim-jsbeautify" ];then
+        cd ~/.vim/bundle/vim-jsbeautify && git submodule update --init --recursive && cd -
+        ret="$?"
+        success "Install deps of vim-jsbeautify"
+        debug
+    fi
+}
+
 spf13_vim() {
     msg "Trying to install spf13-vim"
 
@@ -162,6 +173,7 @@ create_symlinks "$CFG_INF_PATH" \
 spf13_vim
 
 godeps
+vimdeps
 
 msg             "\nThanks for installing $app_name."
 msg             "© `date +%Y` https://github.com/GuyCheung/cfg-inf"
