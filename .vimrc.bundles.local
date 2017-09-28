@@ -38,7 +38,7 @@
     if count(g:spf13_bundle_groups, 'programming')
         " Pick one of the checksyntax, jslint, or syntastic
         UnBundle 'scrooloose/syntastic'
-        UnBundle 'tpope/vim-fugitive'
+        " UnBundle 'tpope/vim-fugitive'
         UnBundle 'mattn/webapi-vim'
         UnBundle 'mattn/gist-vim'
         UnBundle 'scrooloose/nerdcommenter'
