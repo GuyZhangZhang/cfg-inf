@@ -27,6 +27,12 @@
     endif
 " }
 
+" Html
+    if count(g:spf13_bundle_groups, 'html')
+        UnBundle 'amirh/HTML-AutoCloseTag'
+    endif
+" }
+
 " Go Lang {
     if count(g:spf13_bundle_groups, 'javascript')
         Bundle 'mxw/vim-jsx'
