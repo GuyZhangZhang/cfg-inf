@@ -77,6 +77,6 @@
 
     " Bundle groups to use
     "   let g:spf13_bundle_groups=['general', 'writing', 'neocomplete', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc',]
-    let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'php', 'ruby', 'python', 'javascript', 'html', 'misc', 'go', 'puppet']
+    let g:spf13_bundle_groups=['general', 'neocomplete', 'programming', 'go']
 
 " }
