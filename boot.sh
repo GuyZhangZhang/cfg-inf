@@ -127,6 +127,7 @@ godeps() {
 
     go get -u github.com/rogpeppe/godef
     go get -u github.com/nsf/gocode
+    go get -u github.com/golang/tools
 
     ret="$?"
     success "Install deps of go packages"
