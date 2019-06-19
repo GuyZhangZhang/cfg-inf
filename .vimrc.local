@@ -73,3 +73,5 @@ set nocursorline
 " set for work with tmux
 set clipboard="
 
+" set not auto hide json quotation marks
+set conceallevel=0
